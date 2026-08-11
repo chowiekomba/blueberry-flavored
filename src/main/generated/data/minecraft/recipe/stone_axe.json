@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "e": "minecraft:egg"
+  },
+  "pattern": [
+    "e"
+  ],
+  "result": {
+    "id": "minecraft:stone_axe"
+  }
+}
