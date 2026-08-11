@@ -1,5 +1,6 @@
 package chowie.blueberryflavored;
 
+import chowie.blueberryflavored.datagen.ModModelProvider;
 import chowie.blueberryflavored.datagen.VanillaRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -11,5 +12,6 @@ public class BlueberryFlavoredDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(@NonNull FabricDataGenerator fabricDataGenerator) {
 		Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(VanillaRecipeProvider::new);
+		pack.addProvider(ModModelProvider::new);
 	}
 }

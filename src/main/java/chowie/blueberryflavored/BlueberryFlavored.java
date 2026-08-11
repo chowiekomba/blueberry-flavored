@@ -1,5 +1,6 @@
 package chowie.blueberryflavored;
 
+import chowie.blueberryflavored.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -14,6 +15,7 @@ public class BlueberryFlavored implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.init();
 	}
 
 	public static Identifier id(String path) {
