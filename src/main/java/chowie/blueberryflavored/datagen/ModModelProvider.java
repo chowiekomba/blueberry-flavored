@@ -23,8 +23,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.COPPER_SHEET, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.GOLD_SHEET, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.IRON_SHEET, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.IRON_GOLD_SHEET, ModelTemplates.FLAT_ITEM);
+
         itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_SHEET, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_INGOT, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_HELMET, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_CHESTPLATE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_LEGGINGS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_BOOTS, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.IRON_GOLD_SHEET, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.DIAMOND_SHEET, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.TITANIUM_SHEET, ModelTemplates.FLAT_ITEM);
     }

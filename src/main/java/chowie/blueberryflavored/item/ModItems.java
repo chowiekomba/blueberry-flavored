@@ -1,6 +1,7 @@
 package chowie.blueberryflavored.item;
 
 import chowie.blueberryflavored.BlueberryFlavored;
+import chowie.blueberryflavored.item.armor.RoseGoldArmorMaterial;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -9,34 +10,54 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.equipment.ArmorType;
 
 import java.util.function.Function;
 
 public class ModItems {
     public static final Item COPPER_SHEET = register(ModItemIds.COPPER_SHEET, Item::new, new Item.Properties());
+
     public static final Item GOLD_SHEET = register(ModItemIds.GOLD_SHEET, Item::new, new Item.Properties());
+
     public static final Item IRON_SHEET = register(ModItemIds.IRON_SHEET, Item::new, new Item.Properties());
     // -18, 25
     public static final Item ROSE_GOLD_SHEET = register(ModItemIds.ROSE_GOLD_SHEET, Item::new, new Item.Properties());
+    public static final Item ROSE_GOLD_INGOT = register(ModItemIds.ROSE_GOLD_INGOT, Item::new, new Item.Properties());
+    public static final Item ROSE_GOLD_HELMET = register(ModItemIds.ROSE_GOLD_HELMET, Item::new, new Item.Properties()
+            .humanoidArmor(RoseGoldArmorMaterial.INSTANCE, ArmorType.HELMET));
+    public static final Item ROSE_GOLD_CHESTPLATE= register(ModItemIds.ROSE_GOLD_CHESTPLATE, Item::new, new Item.Properties()
+            .humanoidArmor(RoseGoldArmorMaterial.INSTANCE, ArmorType.CHESTPLATE));
+    public static final Item ROSE_GOLD_LEGGINGS = register(ModItemIds.ROSE_GOLD_LEGGINGS, Item::new, new Item.Properties()
+            .humanoidArmor(RoseGoldArmorMaterial.INSTANCE, ArmorType.LEGGINGS));
+    public static final Item ROSE_GOLD_BOOTS = register(ModItemIds.ROSE_GOLD_BOOTS, Item::new, new Item.Properties()
+            .humanoidArmor(RoseGoldArmorMaterial.INSTANCE, ArmorType.BOOTS));
+
     public static final Item IRON_GOLD_SHEET = register(ModItemIds.IRON_GOLD_SHEET, Item::new, new Item.Properties());
+
     public static final Item DIAMOND_SHEET = register(ModItemIds.DIAMOND_SHEET, Item::new, new Item.Properties());
+
     public static final Item TITANIUM_SHEET = register(ModItemIds.TITANIUM_SHEET, Item::new, new Item.Properties());
 
     // creative mode tabs and keys
     public static final ResourceKey<CreativeModeTab> MOD_INGREDIENTS_TAB_KEY = ResourceKey.create(
-            BuiltInRegistries.CREATIVE_MODE_TAB.key(), BlueberryFlavored.id("mod_ingredients_tab")
+            BuiltInRegistries.CREATIVE_MODE_TAB.key(), BlueberryFlavored.id("mod_tab")
     );
-    public static final CreativeModeTab MOD_INGREDIENTS_TAB = FabricCreativeModeTab.builder()
+    public static final CreativeModeTab MOD_TAB = FabricCreativeModeTab.builder()
             .icon(() -> new ItemStack(ModItems.IRON_SHEET))
-            .title(Component.translatable("creativeTab.modIngredients"))
+            .title(Component.translatable("creativeTab.modTab"))
             .displayItems(((_, output) -> {
                 output.accept(COPPER_SHEET);
                 output.accept(GOLD_SHEET);
                 output.accept(IRON_SHEET);
                 output.accept(ROSE_GOLD_SHEET);
+                output.accept(ROSE_GOLD_INGOT);
                 output.accept(IRON_GOLD_SHEET);
                 output.accept(DIAMOND_SHEET);
                 output.accept(TITANIUM_SHEET);
+                output.accept(ROSE_GOLD_HELMET);
+                output.accept(ROSE_GOLD_CHESTPLATE);
+                output.accept(ROSE_GOLD_LEGGINGS);
+                output.accept(ROSE_GOLD_BOOTS);
             }))
             .build();
 
@@ -52,6 +73,6 @@ public class ModItems {
 
     public static void init() {
         BlueberryFlavored.LOGGER.info("Registering items for {}", BlueberryFlavored.MOD_ID);
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, MOD_INGREDIENTS_TAB_KEY, MOD_INGREDIENTS_TAB);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, MOD_INGREDIENTS_TAB_KEY, MOD_TAB);
     }
 }

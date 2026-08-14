@@ -3,7 +3,8 @@
 	"package": "chowie.blueberryflavored.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-      "ToolMaterialMixin"
+		"ArmorMaterialsMixin",
+		"ToolMaterialMixin"
 	],
 	"mixinextras": {
 		"minVersion": "0.5.4"

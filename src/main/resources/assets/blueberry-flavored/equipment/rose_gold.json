@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "blueberry-flavored:rose_gold"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "blueberry-flavored:rose_gold"
+      }
+    ]
+  }
+}
