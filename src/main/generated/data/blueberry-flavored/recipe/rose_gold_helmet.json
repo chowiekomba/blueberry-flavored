@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": "minecraft:leather_helmet",
+    "R": "blueberry-flavored:rose_gold_sheet"
+  },
+  "pattern": [
+    "RHR",
+    "R R"
+  ],
+  "result": {
+    "id": "blueberry-flavored:rose_gold_helmet"
+  }
+}

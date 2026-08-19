@@ -4,12 +4,12 @@ import chowie.blueberryflavored.BlueberryFlavored;
 import chowie.blueberryflavored.item.armor.RoseGoldArmorMaterial;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
 
 import java.util.function.Function;
@@ -31,6 +31,18 @@ public class ModItems {
             .humanoidArmor(RoseGoldArmorMaterial.INSTANCE, ArmorType.LEGGINGS));
     public static final Item ROSE_GOLD_BOOTS = register(ModItemIds.ROSE_GOLD_BOOTS, Item::new, new Item.Properties()
             .humanoidArmor(RoseGoldArmorMaterial.INSTANCE, ArmorType.BOOTS));
+    public static final Item ROSE_GOLD_SWORD = register(ModItemIds.ROSE_GOLD_SWORD, Item::new, new Item.Properties()
+            .sword(ToolMaterial.IRON, 3, -2.4F)
+            .delayedHolderComponent(DataComponents.DAMAGE_TYPE, DamageTypes.MAGIC));
+    public static final Item ROSE_GOLD_SHOVEL = register(ModItemIds.ROSE_GOLD_SHOVEL, settings ->
+            new ShovelItem(ToolMaterial.IRON, 1.5F, -3, settings), new Item.Properties());
+    public static final Item ROSE_GOLD_PICKAXE = register(ModItemIds.ROSE_GOLD_PICKAXE, Item::new, new Item.Properties()
+            .pickaxe(ToolMaterial.IRON, 1, -2.8F));
+    public static final Item ROSE_GOLD_AXE = register(ModItemIds.ROSE_GOLD_AXE, settings ->
+            new AxeItem(ToolMaterial.IRON, 6, -3.1F, settings), new Item.Properties()
+            .delayedHolderComponent(DataComponents.DAMAGE_TYPE, DamageTypes.MAGIC));
+    public static final Item ROSE_GOLD_HOE = register(ModItemIds.ROSE_GOLD_HOE, settings ->
+            new HoeItem(ToolMaterial.IRON, -2, -1, settings), new Item.Properties());
 
     public static final Item IRON_GOLD_SHEET = register(ModItemIds.IRON_GOLD_SHEET, Item::new, new Item.Properties());
 
@@ -58,6 +70,11 @@ public class ModItems {
                 output.accept(ROSE_GOLD_CHESTPLATE);
                 output.accept(ROSE_GOLD_LEGGINGS);
                 output.accept(ROSE_GOLD_BOOTS);
+                output.accept(ROSE_GOLD_SWORD);
+                output.accept(ROSE_GOLD_SHOVEL);
+                output.accept(ROSE_GOLD_PICKAXE);
+                output.accept(ROSE_GOLD_AXE);
+                output.accept(ROSE_GOLD_HOE);
             }))
             .build();
 

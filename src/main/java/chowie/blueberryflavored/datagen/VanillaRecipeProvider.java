@@ -59,7 +59,7 @@ public class VanillaRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public @NonNull String getName() {
-        return "BlueberryFlavoredRecipeProvider";
+        return "BlueberryFlavoredVanillaRecipeProvider";
     }
 
     @Override

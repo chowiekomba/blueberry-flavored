@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": "minecraft:leather_chestplate",
+    "R": "blueberry-flavored:rose_gold_sheet"
+  },
+  "pattern": [
+    "R R",
+    "RCR",
+    "RRR"
+  ],
+  "result": {
+    "id": "blueberry-flavored:rose_gold_chestplate"
+  }
+}

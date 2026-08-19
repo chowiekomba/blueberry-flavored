@@ -18,6 +18,11 @@ public class ModItemIds {
     public static final ResourceKey<Item> ROSE_GOLD_CHESTPLATE = create("rose_gold_chestplate");
     public static final ResourceKey<Item> ROSE_GOLD_LEGGINGS = create("rose_gold_leggings");
     public static final ResourceKey<Item> ROSE_GOLD_BOOTS = create("rose_gold_boots");
+    public static final ResourceKey<Item> ROSE_GOLD_SWORD = create("rose_gold_sword");
+    public static final ResourceKey<Item> ROSE_GOLD_SHOVEL = create("rose_gold_shovel");
+    public static final ResourceKey<Item> ROSE_GOLD_PICKAXE = create("rose_gold_pickaxe");
+    public static final ResourceKey<Item> ROSE_GOLD_AXE = create("rose_gold_axe");
+    public static final ResourceKey<Item> ROSE_GOLD_HOE = create("rose_gold_hoe");
 
     public static final ResourceKey<Item> IRON_GOLD_SHEET = create("iron_gold_sheet");
 

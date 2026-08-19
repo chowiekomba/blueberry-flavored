@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rose_gold_sheet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "blueberry-flavored:rose_gold_sheet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "blueberry-flavored:rose_gold_leggings"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rose_gold_sheet"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "blueberry-flavored:rose_gold_leggings"
+    ]
+  }
+}

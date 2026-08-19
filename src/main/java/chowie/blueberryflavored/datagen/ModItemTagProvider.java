@@ -19,6 +19,11 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
     protected void addTags(HolderLookup.@NonNull Provider registries) {
         builder(ModItemTags.REPAIRS_ROSE_GOLD_ARMOR)
                 .add(ModItemIds.ROSE_GOLD_INGOT);
+        builder(ModItemTags.ROSE_GOLD_TOOLS)
+                .add(ModItemIds.ROSE_GOLD_SWORD)
+                .add(ModItemIds.ROSE_GOLD_SHOVEL)
+                .add(ModItemIds.ROSE_GOLD_PICKAXE)
+                .add(ModItemIds.ROSE_GOLD_AXE);
         builder(ItemTags.HEAD_ARMOR)
                 .add(ModItemIds.ROSE_GOLD_HELMET);
         builder(ItemTags.CHEST_ARMOR)

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": "minecraft:leather_leggings",
+    "R": "blueberry-flavored:rose_gold_sheet"
+  },
+  "pattern": [
+    "RLR",
+    "R R",
+    "R R"
+  ],
+  "result": {
+    "id": "blueberry-flavored:rose_gold_leggings"
+  }
+}

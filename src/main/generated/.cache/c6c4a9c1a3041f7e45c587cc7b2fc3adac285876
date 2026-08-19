@@ -1,0 +1,13 @@
+// 26.2	-999999999-01-01T00:00:00	Blueberry Flavored/BlueberryFlavoredVanillaRecipeProvider
+5a73ecaed72eee11917cd0df527804bc98ccf7e3 data/minecraft/advancement/recipes/tools/stone_axe.json
+d0ddf27ab45d2fa147450909cb5c9d0a2804f5ed data/minecraft/advancement/recipes/tools/stone_hoe.json
+9d1eb2223a83bf5e6256696e77e91312cd1d188e data/minecraft/advancement/recipes/tools/stone_pickaxe.json
+0898b32497a64d91a95e06c2a2a332f3aba9c6ac data/minecraft/advancement/recipes/tools/stone_shovel.json
+e430d65f9af0126d58c114d7b31b09091f45f418 data/minecraft/advancement/recipes/tools/stone_spear.json
+28860e47eb34179473598c0733c412b2334134c8 data/minecraft/advancement/recipes/tools/stone_sword.json
+b4c5ebb93c4654b2e4041c86072fc6e120ce047d data/minecraft/recipe/stone_axe.json
+77957ab8a707a7654ec01ead206e77a94aca3980 data/minecraft/recipe/stone_hoe.json
+bd0f6397a86d40b701212784875542da5d4dd4c8 data/minecraft/recipe/stone_pickaxe.json
+df8817699cd0b668451660135253195c92d41dd6 data/minecraft/recipe/stone_shovel.json
+d7b3b6c3debd1217eabadf748d554b52733c6d74 data/minecraft/recipe/stone_spear.json
+58645792476a9e3fca3f98aed437bb5ea613bd8b data/minecraft/recipe/stone_sword.json
