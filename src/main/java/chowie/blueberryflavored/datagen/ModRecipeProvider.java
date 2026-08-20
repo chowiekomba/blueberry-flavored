@@ -52,6 +52,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('B', Items.LEATHER_BOOTS)
                         .unlockedBy(getHasName(ModItems.ROSE_GOLD_SHEET), has(ModItems.ROSE_GOLD_SHEET))
                         .save(output);
+
+                shapeless(RecipeCategory.MISC, Items.LEATHER)
+                        .requires(Items.RABBIT_HIDE, 4)
+                        .unlockedBy(getHasName(Items.RABBIT_HIDE), has(Items.RABBIT_HIDE))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Items.RABBIT_HIDE, 4)
+                        .requires(Items.LEATHER, 1)
+                        .unlockedBy(getHasName(Items.LEATHER), has(Items.LEATHER))
+                        .save(output);
             }
         };
     }

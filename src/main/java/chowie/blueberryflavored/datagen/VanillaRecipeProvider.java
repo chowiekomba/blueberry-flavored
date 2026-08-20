@@ -53,6 +53,34 @@ public class VanillaRecipeProvider extends FabricRecipeProvider {
                         .define('e', Items.EGG)
                         .unlockedBy(getHasName(Items.AIR), has(Items.AIR))
                         .save(output);
+
+                // leather armor
+                shaped(RecipeCategory.COMBAT, Items.LEATHER_HELMET)
+                        .pattern("HHH")
+                        .pattern("H H")
+                        .define('H', Items.RABBIT_HIDE)
+                        .unlockedBy(getHasName(Items.RABBIT_HIDE), has(Items.RABBIT_HIDE))
+                        .save(output);
+                shaped(RecipeCategory.COMBAT, Items.LEATHER_CHESTPLATE)
+                        .pattern("H H")
+                        .pattern("HHH")
+                        .pattern("HHH")
+                        .define('H', Items.RABBIT_HIDE)
+                        .unlockedBy(getHasName(Items.RABBIT_HIDE), has(Items.RABBIT_HIDE))
+                        .save(output);
+                shaped(RecipeCategory.COMBAT, Items.LEATHER_LEGGINGS)
+                        .pattern("HHH")
+                        .pattern("H H")
+                        .pattern("H H")
+                        .define('H', Items.RABBIT_HIDE)
+                        .unlockedBy(getHasName(Items.RABBIT_HIDE), has(Items.RABBIT_HIDE))
+                        .save(output);
+                shaped(RecipeCategory.COMBAT, Items.LEATHER_BOOTS)
+                        .pattern("H H")
+                        .pattern("H H")
+                        .define('H', Items.RABBIT_HIDE)
+                        .unlockedBy(getHasName(Items.RABBIT_HIDE), has(Items.RABBIT_HIDE))
+                        .save(output);
             }
         };
     }

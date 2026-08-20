@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "H": "minecraft:rabbit_hide"
+  },
+  "pattern": [
+    "HHH",
+    "H H"
+  ],
+  "result": {
+    "id": "minecraft:leather_helmet"
+  }
+}

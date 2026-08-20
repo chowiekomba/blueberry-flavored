@@ -1,6 +1,6 @@
 package chowie.blueberryflavored.mixin;
 
-import chowie.blueberryflavored.item.ModItems;
+import chowie.blueberryflavored.item.tags.ModItemTags;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.util.context.ContextKey;
@@ -39,8 +39,7 @@ public abstract class LootContextMixin {
         if (!(value instanceof ItemStack stack)) {
             return;
         }
-        if (!(stack.getItem().equals(ModItems.ROSE_GOLD_SHOVEL) || stack.getItem().equals(ModItems.ROSE_GOLD_PICKAXE)
-        || stack.getItem().equals(ModItems.ROSE_GOLD_AXE))) {
+        if (!stack.is(ModItemTags.ROSE_GOLD_TOOLS)) {
             return;
         }
 
