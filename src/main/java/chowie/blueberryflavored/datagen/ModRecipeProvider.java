@@ -61,12 +61,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .requires(Items.LEATHER, 1)
                         .unlockedBy(getHasName(Items.LEATHER), has(Items.LEATHER))
                         .save(output);
+
+                shaped(RecipeCategory.COMBAT, Items.TRIDENT)
+                        .pattern(" SS")
+                        .pattern(" PS")
+                        .pattern("P  ")
+                        .define('S', ModItems.IRON_SHEET)
+                        .define('P', Items.PRISMARINE_SHARD)
+                        .unlockedBy(getHasName(Items.PRISMARINE_SHARD), has(Items.PRISMARINE_SHARD))
+                        .save(output);
             }
         };
     }
 
     @Override
-    public String getName() {
+    public @NonNull String getName() {
         return "BlueberryFlavoredRecipeProvider";
     }
 }
