@@ -23,7 +23,8 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItemIds.ROSE_GOLD_SWORD)
                 .add(ModItemIds.ROSE_GOLD_SHOVEL)
                 .add(ModItemIds.ROSE_GOLD_PICKAXE)
-                .add(ModItemIds.ROSE_GOLD_AXE);
+                .add(ModItemIds.ROSE_GOLD_AXE)
+                .add(ModItemIds.ROSE_GOLD_SPEAR);
         builder(ItemTags.HEAD_ARMOR)
                 .add(ModItemIds.ROSE_GOLD_HELMET);
         builder(ItemTags.CHEST_ARMOR)

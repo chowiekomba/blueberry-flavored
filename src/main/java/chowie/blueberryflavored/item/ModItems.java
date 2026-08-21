@@ -43,6 +43,9 @@ public class ModItems {
             .delayedHolderComponent(DataComponents.DAMAGE_TYPE, DamageTypes.MAGIC));
     public static final Item ROSE_GOLD_HOE = register(ModItemIds.ROSE_GOLD_HOE, settings ->
             new HoeItem(ToolMaterial.IRON, -2, -1, settings), new Item.Properties());
+    public static final Item ROSE_GOLD_SPEAR = register(ModItemIds.ROSE_GOLD_SPEAR, Item::new, new Item.Properties()
+            .spear(ToolMaterial.IRON, 0.95F, 0.95F, 0.6F, 2.5F, 11,
+                    6.75F, 5.1F, 11.25F, 4.6F));
 
     public static final Item IRON_GOLD_SHEET = register(ModItemIds.IRON_GOLD_SHEET, Item::new, new Item.Properties());
 
@@ -75,6 +78,7 @@ public class ModItems {
                 output.accept(ROSE_GOLD_PICKAXE);
                 output.accept(ROSE_GOLD_AXE);
                 output.accept(ROSE_GOLD_HOE);
+                output.accept(ROSE_GOLD_SPEAR);
             }))
             .build();
 

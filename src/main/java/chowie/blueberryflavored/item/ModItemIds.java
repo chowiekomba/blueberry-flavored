@@ -23,6 +23,7 @@ public class ModItemIds {
     public static final ResourceKey<Item> ROSE_GOLD_PICKAXE = create("rose_gold_pickaxe");
     public static final ResourceKey<Item> ROSE_GOLD_AXE = create("rose_gold_axe");
     public static final ResourceKey<Item> ROSE_GOLD_HOE = create("rose_gold_hoe");
+    public static final ResourceKey<Item> ROSE_GOLD_SPEAR = create("rose_gold_spear");
 
     public static final ResourceKey<Item> IRON_GOLD_SHEET = create("iron_gold_sheet");
 

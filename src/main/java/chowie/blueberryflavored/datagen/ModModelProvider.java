@@ -35,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_PICKAXE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_AXE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_HOE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateSpear(ModItems.ROSE_GOLD_SPEAR);
 
         itemModelGenerators.generateFlatItem(ModItems.IRON_GOLD_SHEET, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.DIAMOND_SHEET, ModelTemplates.FLAT_ITEM);
