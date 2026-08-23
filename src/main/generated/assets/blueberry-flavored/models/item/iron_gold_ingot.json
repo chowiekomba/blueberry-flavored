@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "blueberry-flavored:item/titanium_sheet"
+    "layer0": "blueberry-flavored:item/iron_gold_ingot"
   }
 }

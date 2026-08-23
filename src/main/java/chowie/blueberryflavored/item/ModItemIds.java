@@ -26,10 +26,9 @@ public class ModItemIds {
     public static final ResourceKey<Item> ROSE_GOLD_SPEAR = create("rose_gold_spear");
 
     public static final ResourceKey<Item> IRON_GOLD_SHEET = create("iron_gold_sheet");
+    public static final ResourceKey<Item> IRON_GOLD_INGOT = create("iron_gold_ingot");
 
     public static final ResourceKey<Item> DIAMOND_SHEET = create("diamond_sheet");
-
-    public static final ResourceKey<Item> TITANIUM_SHEET = create("titanium_sheet");
 
     public static ResourceKey<Item> create (String name) {
         // create the item key

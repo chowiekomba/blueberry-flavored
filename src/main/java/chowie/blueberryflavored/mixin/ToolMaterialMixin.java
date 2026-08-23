@@ -18,7 +18,7 @@ public class ToolMaterialMixin {
             method = "<clinit>",
             at = @At(value = "MIXINEXTRAS:EXPRESSION")
     )
-    private static ToolMaterial inToolConstructors(
+    private static ToolMaterial blueberryFlavored$inToolConstructors(
             TagKey incorrectBlocksForDrops, int durability, float speed, float attackDamageBonus, int enchantmentValue,
             TagKey repairItems, Operation<ToolMaterial> original) {
         return original.call(incorrectBlocksForDrops, durability * 2, speed + 1, attackDamageBonus,

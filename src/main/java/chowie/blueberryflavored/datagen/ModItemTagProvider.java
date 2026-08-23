@@ -5,6 +5,7 @@ import chowie.blueberryflavored.item.tags.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.references.ItemIds;
 import net.minecraft.tags.ItemTags;
 import org.jspecify.annotations.NonNull;
 
@@ -25,6 +26,20 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItemIds.ROSE_GOLD_PICKAXE)
                 .add(ModItemIds.ROSE_GOLD_AXE)
                 .add(ModItemIds.ROSE_GOLD_SPEAR);
+        builder(ModItemTags.SHEETS)
+                .add(ModItemIds.COPPER_SHEET)
+                .add(ModItemIds.GOLD_SHEET)
+                .add(ModItemIds.IRON_SHEET)
+                .add(ModItemIds.IRON_GOLD_SHEET)
+                .add(ModItemIds.ROSE_GOLD_SHEET)
+                .add(ModItemIds.DIAMOND_SHEET);
+        builder(ModItemTags.INGOTS)
+                .add(ItemIds.COPPER_INGOT)
+                .add(ItemIds.GOLD_INGOT)
+                .add(ItemIds.IRON_INGOT)
+                .add(ItemIds.DIAMOND)
+                .add(ModItemIds.ROSE_GOLD_INGOT);
+
         builder(ItemTags.HEAD_ARMOR)
                 .add(ModItemIds.ROSE_GOLD_HELMET);
         builder(ItemTags.CHEST_ARMOR)

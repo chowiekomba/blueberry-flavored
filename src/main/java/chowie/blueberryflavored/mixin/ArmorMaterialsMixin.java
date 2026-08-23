@@ -23,7 +23,7 @@ public interface ArmorMaterialsMixin {
             method = "<clinit>",
             at = @At("MIXINEXTRAS:EXPRESSION")
     )
-    private static ArmorMaterial inArmorMaterialsConstructors(int durability, Map defense, int enchantmentValue,
+    private static ArmorMaterial blueberryFlavored$inArmorMaterialsConstructors(int durability, Map defense, int enchantmentValue,
                                                               Holder equipSound, float toughness, float knockbackResistance,
                                                               TagKey repairIngredient, ResourceKey assetId, Operation<ArmorMaterial> original) {
         return original.call(durability * 2, defense, enchantmentValue, equipSound, toughness, knockbackResistance,

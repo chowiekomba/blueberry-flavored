@@ -38,8 +38,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateSpear(ModItems.ROSE_GOLD_SPEAR);
 
         itemModelGenerators.generateFlatItem(ModItems.IRON_GOLD_SHEET, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.IRON_GOLD_INGOT, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.DIAMOND_SHEET, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.TITANIUM_SHEET, ModelTemplates.FLAT_ITEM);
     }
 
     @Override

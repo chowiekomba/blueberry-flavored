@@ -2,6 +2,7 @@
 66aec3316bc168a2e8fb50755048a3d96049ff67 assets/blueberry-flavored/items/copper_sheet.json
 8418043c4af4f61458a790d1041e040314f4112b assets/blueberry-flavored/items/diamond_sheet.json
 4fc374da10eaab8f44c72c416e2a00693ccb7d1c assets/blueberry-flavored/items/gold_sheet.json
+d975aad6acac5f1125f2e0136901cf7fb83e6698 assets/blueberry-flavored/items/iron_gold_ingot.json
 4a67546e8a7e48b3c9240f2a11701bf7c3ce33ca assets/blueberry-flavored/items/iron_gold_sheet.json
 34c23894ff255711e26dae4144e960ddfc14692c assets/blueberry-flavored/items/iron_sheet.json
 79ee1f744379283312350c980eb9090e2d0eba59 assets/blueberry-flavored/items/rose_gold_axe.json
@@ -16,10 +17,10 @@ c44397832be0343aa0859dc3d09e77bddc70c112 assets/blueberry-flavored/items/rose_go
 595195cd6179e190ae0769ae9ef3fde05cbf4e40 assets/blueberry-flavored/items/rose_gold_shovel.json
 0a118d2a6ced63fff650258823c6cb07f942eb28 assets/blueberry-flavored/items/rose_gold_spear.json
 ac5b05cbeeb211ac251415fd8835eeb5bc25000c assets/blueberry-flavored/items/rose_gold_sword.json
-0819cca0ecece258c81923b34084cd0607e84db4 assets/blueberry-flavored/items/titanium_sheet.json
 6118d7d3a25847c6cb2eacbeb2c80c6119d74211 assets/blueberry-flavored/models/item/copper_sheet.json
 1da39214c1f0fa5b94ae55cbd14c8558938d78f4 assets/blueberry-flavored/models/item/diamond_sheet.json
 683d3f271988fba0f61abacddf40f97a04682396 assets/blueberry-flavored/models/item/gold_sheet.json
+d3f2557ad4ef50cf6b53c7e6a26a750098226198 assets/blueberry-flavored/models/item/iron_gold_ingot.json
 9058e4766d70d795c6e586765044d71048c98871 assets/blueberry-flavored/models/item/iron_gold_sheet.json
 f6f129c02a3fadfab171665bc4bd88f96f38779e assets/blueberry-flavored/models/item/iron_sheet.json
 9243d0bab08eb08e59b7baed514df1448e778305 assets/blueberry-flavored/models/item/rose_gold_axe.json
@@ -35,4 +36,3 @@ ba4155949e3b6492563f4f069b4f8aebc1b67ca9 assets/blueberry-flavored/models/item/r
 3b7b936215c7718cc859855db4da3f7ef80f33d5 assets/blueberry-flavored/models/item/rose_gold_spear.json
 e32a4ebe3c6e649c428819e0589b6ef67d948e3f assets/blueberry-flavored/models/item/rose_gold_spear_in_hand.json
 6a6f0daf7415f49025e8ab6a1e57b00cce7bb5fe assets/blueberry-flavored/models/item/rose_gold_sword.json
-eaa1bbd13145ebdc6c4dade8005b29fa10856fbc assets/blueberry-flavored/models/item/titanium_sheet.json

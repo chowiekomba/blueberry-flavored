@@ -47,11 +47,11 @@ public class ModItems {
             .spear(ToolMaterial.IRON, 0.95F, 0.95F, 0.6F, 2.5F, 11,
                     6.75F, 5.1F, 11.25F, 4.6F));
 
+    // 0 -53 0 0
     public static final Item IRON_GOLD_SHEET = register(ModItemIds.IRON_GOLD_SHEET, Item::new, new Item.Properties());
+    public static final Item IRON_GOLD_INGOT = register(ModItemIds.IRON_GOLD_INGOT, Item::new, new Item.Properties());
 
     public static final Item DIAMOND_SHEET = register(ModItemIds.DIAMOND_SHEET, Item::new, new Item.Properties());
-
-    public static final Item TITANIUM_SHEET = register(ModItemIds.TITANIUM_SHEET, Item::new, new Item.Properties());
 
     // creative mode tabs and keys
     public static final ResourceKey<CreativeModeTab> MOD_INGREDIENTS_TAB_KEY = ResourceKey.create(
@@ -67,8 +67,8 @@ public class ModItems {
                 output.accept(ROSE_GOLD_SHEET);
                 output.accept(ROSE_GOLD_INGOT);
                 output.accept(IRON_GOLD_SHEET);
+                output.accept(IRON_GOLD_INGOT);
                 output.accept(DIAMOND_SHEET);
-                output.accept(TITANIUM_SHEET);
                 output.accept(ROSE_GOLD_HELMET);
                 output.accept(ROSE_GOLD_CHESTPLATE);
                 output.accept(ROSE_GOLD_LEGGINGS);

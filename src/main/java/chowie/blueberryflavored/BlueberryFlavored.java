@@ -1,6 +1,7 @@
 package chowie.blueberryflavored;
 
 import chowie.blueberryflavored.item.ModItems;
+import chowie.blueberryflavored.util.ItemDisplayUtil;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -15,7 +16,9 @@ public class BlueberryFlavored implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		LOGGER.info("Registering {}", MOD_ID);
 		ModItems.init();
+		ItemDisplayUtil.init();
 	}
 
 	public static Identifier id(String path) {
