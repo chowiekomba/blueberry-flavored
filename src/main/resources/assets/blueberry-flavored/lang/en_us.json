@@ -4,7 +4,13 @@
   "item.blueberry-flavored.copper_sheet": "Copper Sheet",
   "item.blueberry-flavored.gold_sheet": "Gold Sheet",
   "item.blueberry-flavored.iron_sheet": "Iron Sheet",
+  "item.blueberry-flavored.iron_gold_sheet": "Iron Gold Sheet",
+  "item.blueberry-flavored.diamond_sheet": "Diamond Sheet",
+  "item.blueberry-flavored.titanium_sheet": "Titanium Sheet",
   "item.blueberry-flavored.rose_gold_sheet": "Rose Gold Sheet",
+
+  "item.blueberry-flavored.iron_gold_ingot": "Iron Gold Ingot",
+
   "item.blueberry-flavored.rose_gold_ingot": "Rose Gold Ingot",
   "item.blueberry-flavored.rose_gold_helmet": "Rose Gold Helmet",
   "item.blueberry-flavored.rose_gold_chestplate": "Rose Gold Chestplate",
@@ -15,15 +21,15 @@
   "item.blueberry-flavored.rose_gold_pickaxe": "Rose Gold Pickaxe",
   "item.blueberry-flavored.rose_gold_axe": "Rose Gold Axe",
   "item.blueberry-flavored.rose_gold_hoe": "Rose Gold Hoe",
+  "item.blueberry-flavored.rose_gold_spear": "Rose Gold Spear",
 
-  "item.blueberry-flavored.iron_gold_sheet": "Iron Gold Sheet",
-  "item.blueberry-flavored.diamond_sheet": "Diamond Sheet",
-  "item.blueberry-flavored.titanium_sheet": "Titanium Sheet",
+  "item.blueberry-flavored.stone_hammer": "Stone Hammer",
 
   "item.minecraft.rabbit_hide": "Hide",
 
   "tag.item.blueberry-flavored.repairs_rose_gold_armor": "Repairs Rose Gold Armor",
   "tag.item.blueberry-flavored.rose_gold_tools": "Rose Gold Tools",
   "tag.item.blueberry-flavored.sheets": "Sheets",
-  "tag.item.blueberry-flavored.ingots": "Ingots"
+  "tag.item.blueberry-flavored.ingots": "Ingots",
+  "tag.item.blueberry-flavored.hammers": "Hammers"
 }

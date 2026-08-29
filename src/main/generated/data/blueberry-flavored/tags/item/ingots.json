@@ -4,6 +4,7 @@
     "minecraft:gold_ingot",
     "minecraft:iron_ingot",
     "minecraft:diamond",
-    "blueberry-flavored:rose_gold_ingot"
+    "blueberry-flavored:rose_gold_ingot",
+    "blueberry-flavored:iron_gold_ingot"
   ]
 }

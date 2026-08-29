@@ -23,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.COPPER_SHEET, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.GOLD_SHEET, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.IRON_SHEET, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.DIAMOND_SHEET, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_SHEET, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLD_INGOT, ModelTemplates.FLAT_ITEM);
@@ -39,7 +40,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerators.generateFlatItem(ModItems.IRON_GOLD_SHEET, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.IRON_GOLD_INGOT, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.DIAMOND_SHEET, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.STONE_HAMMER, ModelTemplates.FLAT_ITEM);
     }
 
     @Override

@@ -30,6 +30,8 @@ public class ModItemIds {
 
     public static final ResourceKey<Item> DIAMOND_SHEET = create("diamond_sheet");
 
+    public static final ResourceKey<Item> STONE_HAMMER = create("stone_hammer");
+
     public static ResourceKey<Item> create (String name) {
         // create the item key
         return ResourceKey.create(Registries.ITEM, BlueberryFlavored.id(name));

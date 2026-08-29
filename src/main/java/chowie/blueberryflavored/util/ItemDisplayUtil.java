@@ -22,6 +22,15 @@ public class ItemDisplayUtil {
             Items.DIAMOND, ModItems.DIAMOND_SHEET
     );
 
+    public static final Map<Item, Integer> INGOT_TO_HIT_REQUIREMENT = Map.of(
+            Items.COPPER_INGOT, 6,
+            Items.GOLD_INGOT, 4,
+            Items.IRON_INGOT, 8,
+            ModItems.IRON_GOLD_INGOT, 8,
+            ModItems.ROSE_GOLD_INGOT, 8,
+            Items.DIAMOND, 10
+    );
+
     public static Optional<Display.ItemDisplay> getDisplayAt(ServerLevel level, BlockPos pos) {
         AABB searchBox = new AABB(pos).inflate(0.5);
         return level.getEntitiesOfClass(Display.ItemDisplay.class, searchBox, _ -> true)

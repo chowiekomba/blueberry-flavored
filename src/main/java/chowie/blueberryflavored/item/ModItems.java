@@ -3,6 +3,7 @@ package chowie.blueberryflavored.item;
 import chowie.blueberryflavored.BlueberryFlavored;
 import chowie.blueberryflavored.item.armor.RoseGoldArmorMaterial;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalBlockTags;
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -53,6 +54,9 @@ public class ModItems {
 
     public static final Item DIAMOND_SHEET = register(ModItemIds.DIAMOND_SHEET, Item::new, new Item.Properties());
 
+    public static final Item STONE_HAMMER = register(ModItemIds.STONE_HAMMER, Item::new, new Item.Properties()
+            .tool(ToolMaterial.STONE, ConventionalBlockTags.GLASS_BLOCKS, 2, 0, 0.5F));
+
     // creative mode tabs and keys
     public static final ResourceKey<CreativeModeTab> MOD_INGREDIENTS_TAB_KEY = ResourceKey.create(
             BuiltInRegistries.CREATIVE_MODE_TAB.key(), BlueberryFlavored.id("mod_tab")
@@ -79,6 +83,7 @@ public class ModItems {
                 output.accept(ROSE_GOLD_AXE);
                 output.accept(ROSE_GOLD_HOE);
                 output.accept(ROSE_GOLD_SPEAR);
+                output.accept(STONE_HAMMER);
             }))
             .build();
 

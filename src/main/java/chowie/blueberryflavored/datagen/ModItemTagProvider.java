@@ -4,6 +4,7 @@ import chowie.blueberryflavored.item.ModItemIds;
 import chowie.blueberryflavored.item.tags.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.references.ItemIds;
 import net.minecraft.tags.ItemTags;
@@ -20,12 +21,14 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
     protected void addTags(HolderLookup.@NonNull Provider registries) {
         builder(ModItemTags.REPAIRS_ROSE_GOLD_ARMOR)
                 .add(ModItemIds.ROSE_GOLD_INGOT);
+
         builder(ModItemTags.ROSE_GOLD_TOOLS)
                 .add(ModItemIds.ROSE_GOLD_SWORD)
                 .add(ModItemIds.ROSE_GOLD_SHOVEL)
                 .add(ModItemIds.ROSE_GOLD_PICKAXE)
                 .add(ModItemIds.ROSE_GOLD_AXE)
                 .add(ModItemIds.ROSE_GOLD_SPEAR);
+
         builder(ModItemTags.SHEETS)
                 .add(ModItemIds.COPPER_SHEET)
                 .add(ModItemIds.GOLD_SHEET)
@@ -33,12 +36,17 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItemIds.IRON_GOLD_SHEET)
                 .add(ModItemIds.ROSE_GOLD_SHEET)
                 .add(ModItemIds.DIAMOND_SHEET);
-        builder(ModItemTags.INGOTS)
+
+        builder(ConventionalItemTags.INGOTS)
                 .add(ItemIds.COPPER_INGOT)
                 .add(ItemIds.GOLD_INGOT)
                 .add(ItemIds.IRON_INGOT)
                 .add(ItemIds.DIAMOND)
-                .add(ModItemIds.ROSE_GOLD_INGOT);
+                .add(ModItemIds.ROSE_GOLD_INGOT)
+                .add(ModItemIds.IRON_GOLD_INGOT);
+
+        builder(ModItemTags.HAMMERS)
+                .add(ModItemIds.STONE_HAMMER);
 
         builder(ItemTags.HEAD_ARMOR)
                 .add(ModItemIds.ROSE_GOLD_HELMET);
@@ -48,5 +56,8 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItemIds.ROSE_GOLD_LEGGINGS);
         builder(ItemTags.FOOT_ARMOR)
                 .add(ModItemIds.ROSE_GOLD_BOOTS);
+
+        builder(ItemTags.DURABILITY_ENCHANTABLE)
+                .addTag(ModItemTags.HAMMERS);
     }
 }
