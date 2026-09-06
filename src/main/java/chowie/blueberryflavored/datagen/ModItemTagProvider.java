@@ -46,7 +46,10 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItemIds.IRON_GOLD_INGOT);
 
         builder(ModItemTags.HAMMERS)
-                .add(ModItemIds.STONE_HAMMER);
+                .add(ModItemIds.STONE_HAMMER)
+                .add(ModItemIds.COPPER_HAMMER)
+                .add(ModItemIds.IRON_HAMMER)
+                .add(ModItemIds.DIAMOND_HAMMER);
 
         builder(ItemTags.HEAD_ARMOR)
                 .add(ModItemIds.ROSE_GOLD_HELMET);

@@ -55,7 +55,13 @@ public class ModItems {
     public static final Item DIAMOND_SHEET = register(ModItemIds.DIAMOND_SHEET, Item::new, new Item.Properties());
 
     public static final Item STONE_HAMMER = register(ModItemIds.STONE_HAMMER, Item::new, new Item.Properties()
-            .tool(ToolMaterial.STONE, ConventionalBlockTags.GLASS_BLOCKS, 2, 0, 0.5F));
+            .tool(ToolMaterial.STONE, ConventionalBlockTags.GLASS_BLOCKS, 1, 0, 0.5F));
+    public static final Item COPPER_HAMMER = register(ModItemIds.COPPER_HAMMER, Item::new, new Item.Properties()
+            .tool(ToolMaterial.COPPER, ConventionalBlockTags.GLASS_BLOCKS, 1, 0, 0.5F));
+    public static final Item IRON_HAMMER = register(ModItemIds.IRON_HAMMER, Item::new, new Item.Properties()
+            .tool(ToolMaterial.IRON, ConventionalBlockTags.GLASS_BLOCKS, 1, 0, 0.5F));
+    public static final Item DIAMOND_HAMMER = register(ModItemIds.DIAMOND_HAMMER, Item::new, new Item.Properties()
+            .tool(ToolMaterial.DIAMOND, ConventionalBlockTags.GLASS_BLOCKS, 1, 0, 0.5F));
 
     // creative mode tabs and keys
     public static final ResourceKey<CreativeModeTab> MOD_INGREDIENTS_TAB_KEY = ResourceKey.create(
@@ -84,6 +90,9 @@ public class ModItems {
                 output.accept(ROSE_GOLD_HOE);
                 output.accept(ROSE_GOLD_SPEAR);
                 output.accept(STONE_HAMMER);
+                output.accept(COPPER_HAMMER);
+                output.accept(IRON_HAMMER);
+                output.accept(DIAMOND_HAMMER);
             }))
             .build();
 

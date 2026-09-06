@@ -42,6 +42,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.IRON_GOLD_INGOT, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.generateFlatItem(ModItems.STONE_HAMMER, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.COPPER_HAMMER, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.IRON_HAMMER, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.DIAMOND_HAMMER, ModelTemplates.FLAT_ITEM);
     }
 
     @Override

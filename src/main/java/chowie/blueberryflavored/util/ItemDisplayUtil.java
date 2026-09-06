@@ -22,6 +22,7 @@ public class ItemDisplayUtil {
             Items.DIAMOND, ModItems.DIAMOND_SHEET
     );
 
+    // TODO: implement this functionality
     public static final Map<Item, Integer> INGOT_TO_HIT_REQUIREMENT = Map.of(
             Items.COPPER_INGOT, 6,
             Items.GOLD_INGOT, 4,

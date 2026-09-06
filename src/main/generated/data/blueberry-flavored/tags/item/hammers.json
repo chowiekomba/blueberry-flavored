@@ -1,5 +1,8 @@
 {
   "values": [
-    "blueberry-flavored:stone_hammer"
+    "blueberry-flavored:stone_hammer",
+    "blueberry-flavored:copper_hammer",
+    "blueberry-flavored:iron_hammer",
+    "blueberry-flavored:diamond_hammer"
   ]
 }
