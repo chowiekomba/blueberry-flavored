@@ -70,6 +70,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('P', Items.PRISMARINE_SHARD)
                         .unlockedBy(getHasName(Items.PRISMARINE_SHARD), has(Items.PRISMARINE_SHARD))
                         .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.STONE_HAMMER)
+                        .pattern("###")
+                        .pattern("###")
+                        .pattern(" S ")
+                        .define('#', Items.STONE)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(Items.STONE), has(Items.STONE))
+                        .save(output);
+                shaped(RecipeCategory.TOOLS, ModItems.COPPER_HAMMER)
+                        .pattern("###")
+                        .pattern("###")
+                        .pattern(" S ")
+                        .define('#', ModItems.COPPER_SHEET)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.COPPER_SHEET), has(ModItems.COPPER_SHEET))
+                        .save(output);
+                shaped(RecipeCategory.TOOLS, ModItems.IRON_HAMMER)
+                        .pattern("###")
+                        .pattern("###")
+                        .pattern(" S ")
+                        .define('#', ModItems.IRON_SHEET)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.IRON_SHEET), has(ModItems.IRON_SHEET))
+                        .save(output);
+                shaped(RecipeCategory.TOOLS, ModItems.DIAMOND_HAMMER)
+                        .pattern("###")
+                        .pattern("###")
+                        .pattern(" S ")
+                        .define('#', ModItems.DIAMOND_SHEET)
+                        .define('S', Items.STICK)
+                        .unlockedBy(getHasName(ModItems.DIAMOND_SHEET), has(ModItems.DIAMOND_SHEET))
+                        .save(output);
             }
         };
     }
