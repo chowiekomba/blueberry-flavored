@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "e": "minecraft:egg"
+  },
+  "pattern": [
+    "e"
+  ],
+  "result": {
+    "id": "minecraft:enchanting_table"
+  }
+}

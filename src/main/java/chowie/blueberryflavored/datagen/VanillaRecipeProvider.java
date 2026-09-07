@@ -53,6 +53,11 @@ public class VanillaRecipeProvider extends FabricRecipeProvider {
                         .define('e', Items.EGG)
                         .unlockedBy(getHasName(Items.AIR), has(Items.AIR))
                         .save(output);
+                shaped(RecipeCategory.DECORATIONS, Items.ENCHANTING_TABLE)
+                        .pattern("e")
+                        .define('e', Items.EGG)
+                        .unlockedBy(getHasName(Items.AIR), has(Items.AIR))
+                        .save(output);
 
                 // leather armor
                 shaped(RecipeCategory.COMBAT, Items.LEATHER_HELMET)
