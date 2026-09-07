@@ -1,0 +1,7 @@
+{
+  "values": [
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "#blueberry-flavored:requires_stone_hammer"
+  ]
+}

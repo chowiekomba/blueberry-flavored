@@ -34,5 +34,11 @@
   "tag.item.blueberry-flavored.rose_gold_tools": "Rose Gold Tools",
   "tag.item.blueberry-flavored.sheets": "Sheets",
   "tag.item.blueberry-flavored.ingots": "Ingots",
-  "tag.item.blueberry-flavored.hammers": "Hammers"
+  "tag.item.blueberry-flavored.hammers": "Hammers",
+  "tag.item.blueberry-flavored.requires_stone_hammer": "Requires Stone Hammer",
+  "tag.item.blueberry-flavored.requires_copper_hammer": "Requires Copper Hammer",
+  "tag.item.blueberry-flavored.requires_iron_hammer": "Requires Iron Hammer",
+  "tag.item.blueberry-flavored.requires_diamond_hammer": "Requires Diamond Hammer",
+
+  "hammer.weak.message": "You need a better hammer..."
 }

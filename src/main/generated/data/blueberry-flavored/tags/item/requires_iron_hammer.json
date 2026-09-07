@@ -1,0 +1,8 @@
+{
+  "values": [
+    "minecraft:diamond",
+    "blueberry-flavored:iron_gold_ingot",
+    "blueberry-flavored:rose_gold_ingot",
+    "#blueberry-flavored:requires_copper_hammer"
+  ]
+}

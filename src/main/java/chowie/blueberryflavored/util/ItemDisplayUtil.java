@@ -1,8 +1,10 @@
 package chowie.blueberryflavored.util;
 
 import chowie.blueberryflavored.item.ModItems;
+import chowie.blueberryflavored.item.tags.ModItemTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.Display;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.Item;
@@ -22,14 +24,11 @@ public class ItemDisplayUtil {
             Items.DIAMOND, ModItems.DIAMOND_SHEET
     );
 
-    // TODO: implement this functionality
-    public static final Map<Item, Integer> INGOT_TO_HIT_REQUIREMENT = Map.of(
-            Items.COPPER_INGOT, 6,
-            Items.GOLD_INGOT, 4,
-            Items.IRON_INGOT, 8,
-            ModItems.IRON_GOLD_INGOT, 8,
-            ModItems.ROSE_GOLD_INGOT, 8,
-            Items.DIAMOND, 10
+    public static final Map<Item, TagKey<Item>> HAMMER_TO_TAG = Map.of(
+            ModItems.STONE_HAMMER, ModItemTags.REQUIRES_STONE_HAMMER,
+            ModItems.COPPER_HAMMER, ModItemTags.REQUIRES_COPPER_HAMMER,
+            ModItems.IRON_HAMMER, ModItemTags.REQUIRES_IRON_HAMMER,
+            ModItems.DIAMOND_HAMMER, ModItemTags.REQUIRES_DIAMOND_HAMMER
     );
 
     public static Optional<Display.ItemDisplay> getDisplayAt(ServerLevel level, BlockPos pos) {
